@@ -2,6 +2,7 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     { "source": "/", "destination": "https://coiffeurs-lp-mvp.vercel.app" },
+    { "source": "/assets/:path*", "destination": "https://coiffeurs-lp-mvp.vercel.app/assets/:path*" },
     { "source": "/login", "destination": "https://coiffeurs-web.vercel.app/login" },
     { "source": "/:match*", "destination": "https://coiffeurs-web.vercel.app/:match*" }
   ]
